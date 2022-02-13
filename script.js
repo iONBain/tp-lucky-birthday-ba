@@ -43,5 +43,5 @@ refreshBTN.addEventListener("click", function(){
     dob.value="";
     lNumber.value="";
     outputDescription.textContent = "";
-    alert("page refreshed !")
+    alert("Page has been refreshed")
 })

@@ -1,7 +1,7 @@
 :root {
     --p-dark: rgb(11, 26, 44);
     --p-yellow: #fff126;
-    --p-dark-yellow: #dac402;
+    --p-dark-yellow: #fca400;
     
 }
 
@@ -11,6 +11,7 @@ body {
     background-color: var(--p-dark);
     color: var(--p-yellow);
     font-family: 'Poppins', sans-serif;
+    cursor: default;
 }
 
 .container {
@@ -34,6 +35,9 @@ label {
 }
 
 input {
+    border-radius: 10px;
+    outline: none;
+    border: 0;
     margin-bottom: 2rem;
     width: 20%;
     padding: 0.4rem;
@@ -41,18 +45,21 @@ input {
 
 button {
     background-color: var(--p-yellow);
+    border: 0;
     color: var(--p-dark);
     padding: 1rem;
     border-radius: 20px;
     font-size: 1rem;
     font-weight: bold;
-    border-color: white;
-    border-width: 0.25rem;
+    /* border-color: white; */
+    /* border-width: 0.25rem; */
+    outline: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
     
 }
 button:hover{
     background-color: var(--p-dark-yellow);
-    /* border-radius: 50%; */
     color: black;
 }
 hr {
