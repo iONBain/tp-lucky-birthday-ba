@@ -22,14 +22,16 @@ function clickEventCheck(){
     if(dob.value&&lNumber.value){
 
         var rem = sum % lNumber.value;
-        console.log("lucky numb is ", lNumber.value);
-        console.log("remainder is ", rem)
-        console.log(typeof(rem))
+        //console.log("lucky numb is ", lNumber.value);
+        //console.log("remainder is ", rem)
+        //console.log(typeof(rem))
         if(rem===0){
-            outputDescription.innerHTML = lNumber.value + " is lucky";
+            //outputDescription.innerHTML = lNumber.value + " is lucky";
+            outputDescription.innerHTML = "Your Birthdate is lucky 😊";
         }
         else{
-            outputDescription.innerHTML = lNumber.value + " is not that lucky for you"
+            //outputDescription.innerHTML = lNumber.value + " is not that lucky for you"
+            outputDescription.innerHTML = "Your Birthdate is not that lucky 😢"
         }
     }
     else{
